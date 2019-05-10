@@ -1,0 +1,271 @@
+@charset 'UTF-8';
+
+* {
+  padding:0;
+  margin:0;
+}
+ul,
+ol,
+li {
+  list-style:none;
+}
+a {
+  color:#000;
+  text-decoration:none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight:normal;
+}
+
+/* wrap */
+#wrap {
+
+}
+
+/* header */
+header {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  height:60px;
+  z-index:2;
+}
+header h1 {
+  position:absolute;
+  top:20px;
+  left:40px;
+}
+header h1 a {
+  display:block;
+  width:66px;
+  height:20px;
+  background:url(//t1.kakaocdn.net/kakaocorp/pw/rtn/logo_kakao.png) no-repeat center center;
+  background-size:66px 20px;
+  text-indent:-9999px;
+}
+
+.menu {
+  display:none;
+}
+
+/* gnb */
+#gnb {
+  padding:0 0 0 20%;
+}
+#gnb:after {
+  content:'';
+  display:block;
+  clear:both;
+}
+#gnb li {
+  float:left;
+}
+#gnb li a {
+  display:block;
+  padding:22px 15px;
+}
+
+/* container */
+#container {
+  
+}
+
+/* footer */
+footer {
+  position:relative;
+  height:100px;
+  border-top:1px solid #d4d4d4;
+}
+
+.foot-utill {
+  padding-left:30px;
+  padding-right:30px;
+  overflow:hidden;
+}
+
+.foot-utill li {
+  float:left;
+}
+.foot-utill li a {
+  display:block;
+  padding:15px;
+  font-size:12px;
+  line-height:1.1;
+}
+footer .family-site {
+  position:absolute;
+  top:15px;
+  right:45px;
+}
+footer .family-site a {
+  display:block;
+  width:100px;
+  font-size:12px;
+  border-bottom:1px solid #000;
+}
+footer .copy {
+  padding:0 0 0 40px;
+  font-size:12px;
+}
+
+/* contents */
+
+/* common */
+.main-h2 {
+  font-size:14px;
+}
+.main-title {
+  font-size:20px;
+  font-weight:bold;
+  line-height:32px;
+}
+.main-text {
+  padding-top:8px;
+  color:#666;
+  font-size:14px;
+  line-height:22px;
+}
+
+/* visual */
+.visual-box {
+  
+}
+.visual-box img {
+  width:100%;
+  vertical-align:top;
+}
+.visual-box li {
+  display:none;
+  position:relative;
+}
+.visual-box li.active {
+  display:block;
+}
+.visual-box li .text {
+  position:absolute;
+  top:10px;
+  left:10px;
+}
+
+/* main-list-1 */
+.main-list-1 {
+  width:100%;
+  margin:0 auto;
+  padding-top:35px;
+  overflow:hidden;
+}
+.main-list-1 li {
+  float:left;
+  width:30%;
+  padding:0 1.5%;
+  color:#1e1e1e;
+}
+.main-list-1 li .main-title {
+  padding-top:18px;
+}
+.main-list-1 li .price {
+  padding-top:33px;
+  font-size:32px;
+  font-weight:bold;
+  line-height:45px;
+}
+.main-list-1 li .price span {
+  padding-left:2px;
+  color:#ff0018;
+  font-size:20px;
+  font-weight:normal;
+}
+.main-list-1 li .date {
+  padding-top:28px;
+  font-size:12px;
+}
+
+/* main-list-2 */
+.main-list-2 {
+  width:100%;
+  margin:0 auto;
+  padding-top:60px;
+  overflow:hidden;
+}
+.main-list-2 li {
+  float:left;
+  width:30%;
+  padding:0 1.5%;
+  color:#1e1e1e;
+}
+
+.main-list-2 li .box {
+  position: relative; 
+     
+}
+.main-list-2 li .box img {
+  width:100%;
+}
+
+.main-list-2 .box h2 {
+  display: block;
+  position: absolute; 
+  top:20px;
+  left:20px;
+}
+
+.main-list-2 .box h2 span {
+  color: #fff;
+}
+
+
+.main-list-2 li .main-title {
+  padding-top:18px;
+}
+
+/* 0 ~ 767px 넓이만 적용 */
+@media screen and (max-width:767px) {
+
+  .menu {
+    display:block;
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:20px;
+    height:20px;
+    background-color:red;
+  }
+
+  /* gnb */
+  #gnb {
+    display:none;
+    padding:0 0 0 20%;
+  }
+  #gnb li {
+    float:none;
+  }
+  #gnb li a {
+    padding:10px;
+  }
+
+  /* main-list-1 */
+  .main-list-1 li {
+    width:97%;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-top:1px solid #999;
+  }
+  .main-list-1 li:first-child {
+    border-top:none;
+  }
+
+  /* main-list-2 */
+  .main-list-2 li {
+    width:97%;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-top:1px solid #999;
+  }
+}
