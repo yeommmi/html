@@ -154,6 +154,23 @@ footer .copy {
   left:10px;
 }
 
+.left h2 {
+  display: block;
+  position: absolute;
+  float:left;
+  top:350px;
+  left:50px;
+}
+
+.right h2 {
+  display: block;
+  position: absolute;
+  float:left;
+  top:350px;
+  left:1600px;
+}
+
+
 /* main-list-1 */
 .main-list-1 {
   width:100%;
